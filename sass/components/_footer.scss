@@ -1,0 +1,18 @@
+.footer-part {
+    background-color: #4b4b4b;
+}
+.contact-list {
+    list-style-type: none;
+    text-align: left;
+
+    &__item {
+        color: #ffffff;
+        font-size: 17px;
+        font-family: 'Arial',sans-serif;
+        font-weight: 300;
+    }
+
+    &__item:not(:last-child){
+        margin-bottom: 10px;
+    }
+}

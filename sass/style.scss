@@ -1,0 +1,39 @@
+@import "settings/base";
+@import "settings/container";
+@import "settings/grid";
+@import "settings/colors";
+
+@import "tools/mixins";
+
+/*
+@import "generic/";
+@import "generic/";
+@import "generic/";
+@import "generic/";
+*/
+
+@import "elements/typhography";
+
+
+@import "objects/icons";
+@import "objects/buttons";
+
+
+@import "components/header";
+@import "components/menu";
+@import "components/more-menu";
+@import "components/dishes";
+@import "components/about";
+@import "components/gallery";
+@import "components/footer";
+@import "components/sticky";
+
+
+/*
+@import "trumps/";
+@import "trumps/";
+@import "trumps/";
+@import "trumps/";
+@import "trumps/";
+@import "trumps/";
+*/

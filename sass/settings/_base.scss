@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+.row {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+html {
+    font-size: 100%; //1 rem = 10px; 10px/16px = 62.5% // 16px/16px = 1 * 100 = 100%;
+    font-weight: 400;
+    text-align: center;
+    word-spacing: 1px;
+}
+body {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.section-paddings {
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Markazi+Text:400,500,600,700|Shadows+Into+Light" rel="stylesheet">
+
+        <!--<link rel="stylesheet" type="text/css" href="css/grid.css">-->
+        <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/queries.css">
+
+        <link rel="shortcut icon" type="image/png" href="img/logo.png">
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <title>Resto</title>
+    </head>
+
+    <body>
+    <!-- HEADER -->
+    <header class="header-section" id="home">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navigation-bar">
+                <a href="index.html"><img src="img//logo.png" alt="logo" class="navigation-bar__logo"></a>
+                <ul class="navigation-bar__list">
+                    <li class="nav-item"><a href="#menu" style="text-decoration: none;" class="navigation-bar__nav-list">Menu</a></li>
+                    <li class="nav-item"><a href="#diches" style="text-decoration: none;" class="navigation-bar__nav-list">Diches</a></li>
+                    <li class="nav-item"><a href="#about" style="text-decoration: none;" class="navigation-bar__nav-list">About us</a></li>
+                    <li class="nav-item"><a href="#gallery" style="text-decoration: none;" class="navigation-bar__nav-list">Gallery</a></li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+            
+            <div class="hero-text">
+                <h1 class="hero-text__main">This Template is Awesome</h1>
+                <p class="hero-text__paragraph">resto restaurant home page website template</p>
+            </div>
+
+            <div class="arrow-buttons">
+                <button class="arrow-buttons__left">&#10092;</button>
+                <button class="arrow-buttons__right">&#10093;</button>
+            </div>
+    </header>
+    <div class="after-img-text">
+        <p class="after-img-text__paragraph">The Menu</p>
+    </div>
+
+    <!-- MENU PART -->
+    <section class="menu-section section-paddings js--section-features" id="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col span-1-of-2 left-side">
+
+                    <div class="menu-container-left">
+                        <p class="left-side__paragraph">Voluptate cillum fugiat.<span class="menu-price">$50</span></p>
+                        <p class="left-side__paragraph-sub">Cheese, tomato, mushrooms, onions.</p>
+                    </div>
+
+                    <div class="menu-container-left">
+                        <p class="left-side__paragraph">Metus varius laoreet.<span class="menu-price">$65</span></p>
+                        <p class="left-side__paragraph-sub">Chicken, mozzarella cheese, onions.</p>
+                    </div>
+
+                    <div class="menu-container-left">
+                        <p class="left-side__paragraph">Donec sodales magna.<span class="menu-price">$25</span></p>
+                        <p class="left-side__paragraph-sub">Tuna, Sweetcorn, Cheese.</p>
+                    </div>
+                    <div class="menu-container-left">
+                        <p class="left-side__paragraph">Saugue velit cursus.<span class="menu-price">$30</span></p>
+                        <p class="left-side__paragraph-sub">Pineapple, Mineced Beef, Cheese.</p>
+                    </div>
+                </div>
+
+                <div class="col span-1-of-2 left-side">
+
+                        <div class="menu-container-right">
+                            <p class="left-side__paragraph">Arcu pede enim justo.<span class="menu-price">$45</span></p>
+                            <p class="left-side__paragraph-sub">Tuna, Sweetcorn, Cheese.</p>
+                        </div>
+    
+                        <div class="menu-container-right">
+                            <p class="left-side__paragraph">Cras dapibussemper nisi.<span class="menu-price">$32</span></p>
+                            <p class="left-side__paragraph-sub">Pineapple, Mineced Beef, Cheese.</p>
+                        </div>
+    
+                        <div class="menu-container-right">
+                            <p class="left-side__paragraph">Quam semper libro.<span class="menu-price">$15</span></p>
+                            <p class="left-side__paragraph-sub">Cheese, tomato, mushrooms, onions.</p>
+                        </div>
+                        <div class="menu-container-right">
+                            <p class="left-side__paragraph">Nam eget dui Etiam.<span class="menu-price">$35</span></p>
+                            <p class="left-side__paragraph-sub">Chicken, mozzarella cheese, onions.</p>
+                        </div>
+                    </div>
+
+                <!-- More menu -->
+                <div class="container">
+                    <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Veiw all menu <i class="ion-android-arrow-dropdown more-arrow"></i></button>    
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Italian Food</a>
+                            <a href="#">Greek Food</a>
+                            <a href="#">Hungarian Food</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED DICHES -->
+    <section class="diches-section section-paddings" id="diches">
+    <div class="container" style="text-align: left">
+        <h2 class="diches-section__heading">Featured Diches</h2>
+            <div class="row container">
+                <div class="col span-1-of-4 margin-right">
+                <div class="small-food">
+                    <img src="img/dishes/1.jpg" alt="dishes picture" class="small-food__img">
+                    <p class="small-food__paragraph">Fugan nulla sint<span class="diche-price">$30</span></p>
+                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img"></i>24 people love this</p>
+                </div>
+                </div>
+
+                <div class="col span-1-of-4 margin-right">
+                <div class="small-food">
+                    <img src="img/dishes/2.jpg" alt="dishes picture" class="small-food__img"> 
+                    <p class="small-food__paragraph">Daute irure dolor<span class="diche-price">$24</span></p>
+                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img"></i>2 people love this</p>
+                </div>
+                </div>
+            
+                <div class="col span-1-of-4 margin-right">
+                <div class="small-food">
+                    <img src="img/dishes/3.jpg" alt="dishes picture" class="small-food__img">
+                    <p class="small-food__paragraph">Officia deserunt<span class="diche-price">$60</span></p>
+                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img"></i>11 people love this</p>
+                </div>
+                </div>
+            
+                <div class="col span-1-of-4">
+                <div class="small-food">
+                    <img src="img/dishes/4.jpg" alt="dishes picture" class="small-food__img">
+                    <p class="small-food__paragraph">Pim minim veniam<span class="diche-price">$17</span></p>
+                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img"></i>32 people love this</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section section-paddings" id="about">
+            <div class="container" style="text-align: left">
+                <h2 class="about-section__heading">About Us</h2>
+            
+                <h2 class="about-section__title">Today's restaurant is theater on a grand scale.</h2>
+
+            <div class="row container">
+                <div class="con span-1-of-2">
+                    <p class="descritpion-text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit.At omnis quas illo aperiam reiciendis a labore vel <strike>ever since the 1500s</strike>, <span class="curved-text">when an unknown printer</span> nemo eum enim atque recusandae officia eaque facilis exercitationem sunt aliquid?<span class="bolded-text">Lorem ipsum dolor sit amet consectetur</span> adipisicing elit.At omnis quas illo aperiam reiciendis a labore.</p>
+                
+                    <p class="popular-statistics">It was popularised :</p>
+
+                <div class="list-container">
+                    <ul class="popular-list">
+                        <li class="popular-list__item margin-bottom">Lorem ipsum is symply dummy text of the printing</li>
+                        <li class="popular-list__item margin-bottom">When an unknown printer took a gallaty of a type and scram-<br>bled it to make a type specimen book</li>
+                        <li class="popular-list__item">Dummy text ever since 1500s</li>
+                    </ul>
+                </div>
+                </div>
+
+                <div class="col span-1-of-2">
+                    <p class="descritpion-text-right">Lorem ipsum dolor sit amet consectetur adipisicing elit.<span class="bolded-text">Quo, ad pariatur. Vero in consectete</span> repellat ratione sunt voluptates <span class="curved-text">unknown printer</span> non odit nisi dolorem explicabo, voluptate doloribus magnam iure quisquam?<span class="bolded-text">Lorem ipsum dolor sit amet consectetur</span> adipisicing elit.</p>
+                
+                <div class="quotes">
+                    <blockquote class="blockquote">
+                        Memories are like mulligatawny<br>soup in a cheap restaurant.It is<br>best not to stir them.
+                    </blockquote>
+                </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery-section section-paddings" id="gallery">
+        <div class="container" style="text-align: left">
+            <h2 class="gallery-section__heading">The Gallery</h2>
+            <div class="gallery-section__gallery-grid">
+                <div class="meal-photo-img1">
+                <img src="img/gallary/11.jpg" alt="Korean bibimbap&nbsp;with egg and vegetables" class="gallery-section__img1">
+                </div>
+
+                <div class="meal-photo-img2">
+                <img src="img/gallary/5.jpg" alt="Korean bibimbap&nbsp;with egg and vegetables" class="gallery-section__img2">
+                </div>
+
+                <div class="meal-photo-img3">              
+                <img src="img/gallary/6.jpg" alt="Korean bibimbap&nbsp;with egg and vegetables" class="gallery-section__img3">
+                </div>
+
+                <div class="meal-photo-img4">
+                <img src="img/gallary/9.jpg" alt="Korean bibimbap&nbsp;with egg and vegetables" class="gallery-section__img4">
+                </div>
+
+                <div class="meal-photo-img5">
+                <img src="img/gallary/7.jpg" alt="Korean bibimbap&nbsp;with egg and vegetables" class="gallery-section__img5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Button -->
+    <section class="button-section section-paddings">
+            <div class="home-btn">
+                <a href="#home"><i class="ion-arrow-up-b btn-to-home"></i></a>
+            </div>
+    </section>
+
+    <footer class="footer-part section-paddings">
+        <div class="container">
+            <div class="row container">
+                <div class="col span-1-of-4-footer contact-form">
+                <ul class="contact-list">
+                    <li class="contact-list__item bolded-text">New York Restaurant</li>
+                    <li class="contact-list__item">3926 Anmoore Road</li>
+                    <li class="contact-list__item">New York,NY 1004</li>
+                    <li class="contact-list__item bolded-text">718-749-1714</li>
+                </ul>
+                </div>
+
+                <div class="col span-1-of-4-footer contact-form">
+                <ul class="contact-list">
+                    <li class="contact-list__item bolded-text">Frace Restaurant</li>
+                    <li class="contact-list__item">68, rue de la Couronne</li>
+                    <li class="contact-list__item">75002 PARIS</li>
+                    <li class="contact-list__item bolded-text">02.94.23.69.56</li>
+                </ul>
+                </div>
+
+                <div class="col span-1-of-4-footer contact-form">
+                <ul class="contact-list">
+                    <li class="contact-list__item">Blog</li>
+                    <li class="contact-list__item">Careers</li>
+                    <li class="contact-list__item">Privacy Poliey</li>
+                    <li class="contact-list__item">Contact</li>
+                </ul>
+                </div>
+                
+                <div class="col span-1-of-4-footer contact-form">
+                <ul class="contact-list">
+                    <li class="contact-list__item"><img src="img/logo-white.png" alt="resto-logo"></li>
+                    <li class="contact-list__item">&#169; All Rightss Reserved 2014</li>
+                    <li class="contact-list__item">Find More at <span class="bolded-text">Pixelhint.com</span></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="more-menu.js"></script>
+    <script src="animation.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+
+    </body>
+</html>
+
+
+<!-- <ul class="meals-showcase">
+                    <li>
+                        <figure class="meal-photo">
+                            <img src="img/gallary/8.jpg" alt="Korean bibimbap&nbsp;with egg and vegetables">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="meal-photo">
+                            <img src="img/gallary/5.jpg" alt="Simple italian pizza with cherry tomatoes">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="meal-photo">
+                            <img src="img/gallary/6.jpg" alt="Chicken breast steak with vegetables">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="meal-photo">
+                            <img src="img/gallary/7.jpg" alt="Autumn pumpkin soup">
+                        </figure>
+                    </li>
+                </ul>
+            
+                <ul class="meals-showcase">
+                    <li>
+                        <figure class="meal-photo">
+                            <img src="img/gallary/10.jpg" alt="Paleo beef steak with vegetables">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="meal-photo">
+                            <img src="img/gallary/9.jpg" alt="Healthy baguette with egg and vegetables">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="meal-photo">
+                            <img src="img/gallary/10.jpg" alt="Burger with cheddar and bacon">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="meal-photo">
+                            <img src="img/gallary/9.jpg" alt="Granola with cherries and strawberries">
+                        </figure>
+                    </li>
+                </ul> -->

@@ -1,0 +1,105 @@
+.header-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero/hero.jpg);
+    background-size: cover;
+    height: 680px;
+    width: 100%;
+    //background-attachment: fixed;
+    //background-position: top;
+    //background-repeat: no-repeat;
+    border-bottom: 2px solid #ef4035;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 110px;
+    justify-content: flex-start;
+    left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: absolute;
+    right: 0px;
+    text-align: left;
+    top: 0px;
+    align-items: center;
+
+    background-color: white;
+}
+.navigation-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+        list-style-type: none;
+        text-decoration: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }  
+    &__nav-list {
+        color: #1b1b1b;
+        margin-left: 36px;
+        padding: 5px 0 5px 0;
+        font-size: 16px;
+    }  
+    &__nav-list:hover {
+        border: 1px solid #ef4035;
+        border-left: none;
+        border-right: none;
+        color: #ef4035;
+    }
+}
+.arrow-buttons {
+
+    &__left {
+        position: absolute;
+        left: 20px;
+        background: transparent;
+        border: none;
+        font-size: 90px;
+        outline: none;
+        color: #ffffff;
+    }
+    &__right {
+        position: absolute;
+        right: 20px;
+        background: transparent;
+        border: none;
+        font-size: 90px;
+        outline: none;
+        color: #ffffff;
+    }
+}
+.hero-text {
+
+    &__paragraph {
+        color: #ffffff;
+        font-size: 20px;
+    }
+    &__paragraph:after,
+    &__paragraph:before {
+        display: inline-block;
+        content: "";
+        border-top: 1px solid #ffffff;
+        width: 50px;
+        margin: 0 15px;
+        transform: translateY(-5px);
+    }
+}
