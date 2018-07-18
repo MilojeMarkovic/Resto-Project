@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/queries.css">
+        <link rel="stylesheet" type="text/css" href="css/lightbox.css">
 
         <link rel="shortcut icon" type="image/png" href="img/logo.png">
 
@@ -35,6 +36,13 @@
                 </div>
             </div>
             </nav>
+
+            <div class="bkg-content bkg-conteiner">
+                <img class="mySlide fade header-section__background-imgs" src="img/hero/hero.jpg">
+                <img class="mySlide fade header-section__background-imgs" src="img/hero/hero1.jpg">
+                <img class="mySlide fade header-section__background-imgs" src="img/hero/hero2.jpg">
+                <img class="mySlide fade header-section__background-imgs" src="img/hero/hero3.jpg">
+            </div>
             
             <div class="hero-text">
                 <h1 class="hero-text__main">This Template is Awesome</h1>
@@ -42,8 +50,15 @@
             </div>
 
             <div class="arrow-buttons">
-                <button class="arrow-buttons__left">&#10092;</button>
-                <button class="arrow-buttons__right">&#10093;</button>
+                <button type="button" onclick="plusDivs(-1)" class="arrow-buttons__left">&#10092;</button>
+                <button type="button" onclick="plusDivs(1)" class="arrow-buttons__right">&#10093;</button>
+            </div>
+
+            <div class="img-btn">
+                <span onclick="currentDiv(1)" class="dots"></span>
+                <span onclick="currentDiv(2)" class="dots"></span>
+                <span onclick="currentDiv(3)" class="dots"></span>
+                <span onclick="currentDiv(4)" class="dots"></span>
             </div>
     </header>
     <div class="after-img-text">
@@ -122,7 +137,7 @@
                 <div class="small-food">
                     <img src="img/dishes/1.jpg" alt="dishes picture" class="small-food__img">
                     <p class="small-food__paragraph">Fugan nulla sint<span class="diche-price">$30</span></p>
-                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img"></i>24 people love this</p>
+                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img" id="update"></i><span id="counter">0</span> people love this</p>
                 </div>
                 </div>
 
@@ -130,7 +145,7 @@
                 <div class="small-food">
                     <img src="img/dishes/2.jpg" alt="dishes picture" class="small-food__img"> 
                     <p class="small-food__paragraph">Daute irure dolor<span class="diche-price">$24</span></p>
-                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img"></i>2 people love this</p>
+                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img" id="update--1"></i> <span id="counter--1">0</span> people love this</p>
                 </div>
                 </div>
             
@@ -138,7 +153,7 @@
                 <div class="small-food">
                     <img src="img/dishes/3.jpg" alt="dishes picture" class="small-food__img">
                     <p class="small-food__paragraph">Officia deserunt<span class="diche-price">$60</span></p>
-                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img"></i>11 people love this</p>
+                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img" id="update--2"></i><span id="counter--2">0</span> people love this</p>
                 </div>
                 </div>
             
@@ -146,7 +161,7 @@
                 <div class="small-food">
                     <img src="img/dishes/4.jpg" alt="dishes picture" class="small-food__img">
                     <p class="small-food__paragraph">Pim minim veniam<span class="diche-price">$17</span></p>
-                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img"></i>32 people love this</p>
+                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img" id="update--3"></i><span id="counter--3">0</span> people love this</p>
                 </div>
                 </div>
             </div>
@@ -194,23 +209,23 @@
             <h2 class="gallery-section__heading">The Gallery</h2>
             <div class="gallery-section__gallery-grid">
                 <div class="meal-photo-img1">
-                <img src="img/gallary/11.jpg" alt="Korean bibimbap&nbsp;with egg and vegetables" class="gallery-section__img1">
+                <a href="img/gallary/11.jpg" data-lightbox="image" data-title="food-image"><img src="img/gallary/11.jpg" alt="Korean bibimbap&nbsp;with egg and vegetables" class="gallery-section__img1"></a>
                 </div>
 
                 <div class="meal-photo-img2">
-                <img src="img/gallary/5.jpg" alt="Korean bibimbap&nbsp;with egg and vegetables" class="gallery-section__img2">
+                <a href="img/gallary/5.jpg" data-lightbox="image" data-title="food-image"><img src="img/gallary/5.jpg" alt="Korean bibimbap&nbsp;with egg and vegetables" class="gallery-section__img2"></a>
                 </div>
 
                 <div class="meal-photo-img3">              
-                <img src="img/gallary/6.jpg" alt="Korean bibimbap&nbsp;with egg and vegetables" class="gallery-section__img3">
+                <a href="img/gallary/6.jpg" data-lightbox="image" data-title="food-image"><img src="img/gallary/6.jpg" alt="Korean bibimbap&nbsp;with egg and vegetables" class="gallery-section__img3"></a>
                 </div>
 
                 <div class="meal-photo-img4">
-                <img src="img/gallary/9.jpg" alt="Korean bibimbap&nbsp;with egg and vegetables" class="gallery-section__img4">
+                <a href="img/gallary/9.jpg" data-lightbox="image" data-title="food-image"><img src="img/gallary/9.jpg" alt="Korean bibimbap&nbsp;with egg and vegetables" class="gallery-section__img4"></a>
                 </div>
 
                 <div class="meal-photo-img5">
-                <img src="img/gallary/7.jpg" alt="Korean bibimbap&nbsp;with egg and vegetables" class="gallery-section__img5">
+                <a href="img/gallary/7.jpg" data-lightbox="image" data-title="food-image"><img src="img/gallary/7.jpg" alt="Korean bibimbap&nbsp;with egg and vegetables" class="gallery-section__img5"></a>
                 </div>
             </div>
         </div>
@@ -246,10 +261,10 @@
 
                 <div class="col span-1-of-4-footer contact-form">
                 <ul class="contact-list">
-                    <li class="contact-list__item">Blog</li>
-                    <li class="contact-list__item">Careers</li>
-                    <li class="contact-list__item">Privacy Poliey</li>
-                    <li class="contact-list__item">Contact</li>
+                    <li class="contact-list__item"><a href="#">Blog</a></li>
+                    <li class="contact-list__item"><a href="#">Careers</a></li>
+                    <li class="contact-list__item"><a href="#">Privacy Poliey</a></li>
+                    <li class="contact-list__item"><a href="#">Contact</a></li>
                 </ul>
                 </div>
                 
@@ -264,58 +279,13 @@
         </div>
     </footer>
 
-    <script src="more-menu.js"></script>
-    <script src="animation.js"></script>
+    <script src="js/more-menu.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/like-counter.js"></script>
+    <script src="js/lightbox.js"></script>
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="jquery.waypoints.min.js"></script>
 
     </body>
 </html>
-
-
-<!-- <ul class="meals-showcase">
-                    <li>
-                        <figure class="meal-photo">
-                            <img src="img/gallary/8.jpg" alt="Korean bibimbap&nbsp;with egg and vegetables">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="meal-photo">
-                            <img src="img/gallary/5.jpg" alt="Simple italian pizza with cherry tomatoes">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="meal-photo">
-                            <img src="img/gallary/6.jpg" alt="Chicken breast steak with vegetables">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="meal-photo">
-                            <img src="img/gallary/7.jpg" alt="Autumn pumpkin soup">
-                        </figure>
-                    </li>
-                </ul>
-            
-                <ul class="meals-showcase">
-                    <li>
-                        <figure class="meal-photo">
-                            <img src="img/gallary/10.jpg" alt="Paleo beef steak with vegetables">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="meal-photo">
-                            <img src="img/gallary/9.jpg" alt="Healthy baguette with egg and vegetables">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="meal-photo">
-                            <img src="img/gallary/10.jpg" alt="Burger with cheddar and bacon">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="meal-photo">
-                            <img src="img/gallary/9.jpg" alt="Granola with cherries and strawberries">
-                        </figure>
-                    </li>
-                </ul> -->
