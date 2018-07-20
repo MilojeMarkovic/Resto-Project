@@ -1,9 +1,21 @@
 .footer-part {
     background-color: #4b4b4b;
+
+    @media only screen and (max-width: 480px){
+        .span-1-of-4-footer {
+            width: 100%;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+    }
 }
 .contact-list {
     list-style-type: none;
     text-align: left;
+
+    @media only screen and (max-width: 480px){
+        padding-left: 35px;
+    }
 
     &__item {
         color: #ffffff;

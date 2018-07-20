@@ -13,6 +13,14 @@
         width: 200px;
         margin-left: 20px;
         margin-bottom: 5px;
+
+        @media only screen and (max-width: 480px){
+            width: 120px;
+        }
+
+        @media only screen and (max-width: 320px){
+            display: none;
+        }
     }
 }
 .small-food {
@@ -25,11 +33,25 @@
 
     &__paragraph-sub {
         font-size: 16px;
+
+        @media only screen and (max-width: 480px){
+            padding-bottom: 20px;
+        }
     }
 
     &__img {
         width: 230px;
         height: 200px;
+
+        @media only screen and (max-width: 480px){
+            width: 420px;
+            height: 390px;
+        }
+
+        @media only screen and (max-width: 320px){
+            width: 290px;
+            height: 260px;
+        }
     }
 }
 .diche-price {
@@ -45,6 +67,10 @@
 }
 .diches-btn {
     padding-right: 30px;
+
+    @media only screen and (max-width: 320px){
+        padding-right: 0;
+    }
 }
 .small-dots {
     cursor: pointer;

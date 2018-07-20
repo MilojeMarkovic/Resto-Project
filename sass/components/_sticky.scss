@@ -31,6 +31,14 @@
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+
+        @media only screen and (min-width: 990px) and (max-width: 1024px){
+        
+        }
+    
+        @media only screen and (max-width: 989px){
+            display: none;
+        }
     }  
     &__nav-list {
         color: #1b1b1b;

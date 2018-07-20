@@ -13,6 +13,11 @@
         width: 200px;
         margin-left: 20px;
         margin-bottom: 5px;
+
+        @media only screen and (max-width: 320px){
+            width: 150px;
+            margin-left: 20px;
+        }
     }
     &__title {
         font-size: 45px;
@@ -21,6 +26,11 @@
         color: #4b4b4b;
         font-family: 'Lato', serif;
         margin-bottom: 30px;
+
+        @media only screen and (max-width: 320px){
+            font-size: 35px;
+            line-height: 40px;
+        }
     }
 }
 .descritpion-text-left {
@@ -81,6 +91,10 @@
     font-size: 26px;
     font-family: "Lato",sans-serif;
     transform: skewX(-10deg);
+
+    @media only screen and (max-width: 320px){
+        font-size: 16px;
+    }
 }
 blockquote:before {
     content: "\201C";
@@ -91,6 +105,21 @@ blockquote:before {
     opacity: 0.5;
     top: -60px;
     left: 5px;
+
+    @media only screen and (max-width: 1024px) and (min-width:989px){
+        top: -40px;
+        left: -10px;
+    }
+
+    @media only screen and (max-width: 480px){
+        top: -40px;
+        left: -30px;
+    }
+    
+    @media only screen and (max-width: 320px){
+        top: -30px;
+        left: -30px;
+    }
 }
 blockquote:after{
     content: "\201D";
@@ -101,4 +130,19 @@ blockquote:after{
     opacity: 0.5;
     right: 0;
     top: 30px;
+
+    @media only screen and (max-width: 1024px) and (min-width:989px){
+        top: 50px;
+        right: 35px;
+    }
+
+    @media only screen and (max-width: 480px){
+        top: 50px;
+        right: 20px;
+    }
+
+    @media only screen and (max-width: 320px){
+        right: 0;
+        top: 30px;
+    }
 }

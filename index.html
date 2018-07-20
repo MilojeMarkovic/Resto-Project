@@ -33,6 +33,10 @@
                     <li class="nav-item"><a href="#about" style="text-decoration: none;" class="navigation-bar__nav-list">About us</a></li>
                     <li class="nav-item"><a href="#gallery" style="text-decoration: none;" class="navigation-bar__nav-list">Gallery</a></li>
                 </ul>
+
+                <div class="dropdown-menu">
+                    <i class="ion-android-menu drp-down"></i>
+                </div>
                 </div>
             </div>
             </nav>
@@ -135,14 +139,14 @@
         <div class="diches-container">
         <h2 class="diches-section__heading">Featured Diches</h2>
             <div class="diches-btn">    
-                <span class="small-dots"></span>
-                <span class="small-dots"></span>
-                <span class="small-dots"></span>
-                <span class="small-dots"></span>
+                <span onclick="currentDivs(1)" class="small-dots"></span>
+                <span onclick="currentDivs(2)" class="small-dots"></span>
+                <span onclick="currentDivs(3)" class="small-dots"></span>
+                <span onclick="currentDivs(4)" class="small-dots"></span>
             </div>
         </div>
 
-            <div class="row container">
+            <div class="row container mySlides fade">
                 <div class="col span-1-of-4 margin-right">
                 <div class="small-food">
                     <img src="img/dishes/1.jpg" alt="dishes picture" class="small-food__img">
@@ -162,6 +166,108 @@
                 <div class="col span-1-of-4 margin-right">
                 <div class="small-food">
                     <img src="img/dishes/3.jpg" alt="dishes picture" class="small-food__img">
+                    <p class="small-food__paragraph">Officia deserunt<span class="diche-price">$60</span></p>
+                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img" id="update--2"></i><span id="counter--2">0</span> people love this</p>
+                </div>
+                </div>
+            
+                <div class="col span-1-of-4">
+                <div class="small-food">
+                    <img src="img/dishes/4.jpg" alt="dishes picture" class="small-food__img">
+                    <p class="small-food__paragraph">Pim minim veniam<span class="diche-price">$17</span></p>
+                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img" id="update--3"></i><span id="counter--3">0</span> people love this</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="row container mySlides fade">
+                <div class="col span-1-of-4 margin-right">
+                <div class="small-food">
+                    <img src="img/dishes/4.jpg" alt="dishes picture" class="small-food__img">
+                    <p class="small-food__paragraph">Fugan nulla sint<span class="diche-price">$30</span></p>
+                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img" id="update"></i><span id="counter">0</span> people love this</p>
+                </div>
+                </div>
+
+                <div class="col span-1-of-4 margin-right">
+                <div class="small-food">
+                    <img src="img/dishes/3.jpg" alt="dishes picture" class="small-food__img"> 
+                    <p class="small-food__paragraph">Daute irure dolor<span class="diche-price">$24</span></p>
+                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img" id="update--1"></i> <span id="counter--1">0</span> people love this</p>
+                </div>
+                </div>
+            
+                <div class="col span-1-of-4 margin-right">
+                <div class="small-food">
+                    <img src="img/dishes/2.jpg" alt="dishes picture" class="small-food__img">
+                    <p class="small-food__paragraph">Officia deserunt<span class="diche-price">$60</span></p>
+                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img" id="update--2"></i><span id="counter--2">0</span> people love this</p>
+                </div>
+                </div>
+            
+                <div class="col span-1-of-4">
+                <div class="small-food">
+                    <img src="img/dishes/1.jpg" alt="dishes picture" class="small-food__img">
+                    <p class="small-food__paragraph">Pim minim veniam<span class="diche-price">$17</span></p>
+                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img" id="update--3"></i><span id="counter--3">0</span> people love this</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="row container mySlides fade">
+                <div class="col span-1-of-4 margin-right">
+                <div class="small-food">
+                    <img src="img/dishes/2.jpg" alt="dishes picture" class="small-food__img">
+                    <p class="small-food__paragraph">Fugan nulla sint<span class="diche-price">$30</span></p>
+                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img" id="update"></i><span id="counter">0</span> people love this</p>
+                </div>
+                </div>
+
+                <div class="col span-1-of-4 margin-right">
+                <div class="small-food">
+                    <img src="img/dishes/4.jpg" alt="dishes picture" class="small-food__img"> 
+                    <p class="small-food__paragraph">Daute irure dolor<span class="diche-price">$24</span></p>
+                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img" id="update--1"></i> <span id="counter--1">0</span> people love this</p>
+                </div>
+                </div>
+            
+                <div class="col span-1-of-4 margin-right">
+                <div class="small-food">
+                    <img src="img/dishes/3.jpg" alt="dishes picture" class="small-food__img">
+                    <p class="small-food__paragraph">Officia deserunt<span class="diche-price">$60</span></p>
+                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img" id="update--2"></i><span id="counter--2">0</span> people love this</p>
+                </div>
+                </div>
+            
+                <div class="col span-1-of-4">
+                <div class="small-food">
+                    <img src="img/dishes/1.jpg" alt="dishes picture" class="small-food__img">
+                    <p class="small-food__paragraph">Pim minim veniam<span class="diche-price">$17</span></p>
+                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img" id="update--3"></i><span id="counter--3">0</span> people love this</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="row container mySlides fade">
+                <div class="col span-1-of-4 margin-right">
+                <div class="small-food">
+                    <img src="img/dishes/3.jpg" alt="dishes picture" class="small-food__img">
+                    <p class="small-food__paragraph">Fugan nulla sint<span class="diche-price">$30</span></p>
+                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img" id="update"></i><span id="counter">0</span> people love this</p>
+                </div>
+                </div>
+
+                <div class="col span-1-of-4 margin-right">
+                <div class="small-food">
+                    <img src="img/dishes/2.jpg" alt="dishes picture" class="small-food__img"> 
+                    <p class="small-food__paragraph">Daute irure dolor<span class="diche-price">$24</span></p>
+                    <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img" id="update--1"></i> <span id="counter--1">0</span> people love this</p>
+                </div>
+                </div>
+            
+                <div class="col span-1-of-4 margin-right">
+                <div class="small-food">
+                    <img src="img/dishes/1.jpg" alt="dishes picture" class="small-food__img">
                     <p class="small-food__paragraph">Officia deserunt<span class="diche-price">$60</span></p>
                     <p class="small-food__paragraph-sub"><i class="ion-ios-heart heart-img" id="update--2"></i><span id="counter--2">0</span> people love this</p>
                 </div>

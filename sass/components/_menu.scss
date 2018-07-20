@@ -16,6 +16,10 @@
 
     &__paragraph {
         font-size: 20px;
+
+        @media only screen and (max-width: 320px){
+            font-size: 18px;
+        }
     }
     &__paragraph-sub {
         color: #d3d3d3;
@@ -36,4 +40,9 @@
     width: 180px;
     margin: 0px 30px 0px 10px;
     transform: translateY(-5px);
+
+    @media only screen and (max-width: 320px){
+        width: 50px;
+        margin: 0px 20px 0px 10px;
+    }
 }

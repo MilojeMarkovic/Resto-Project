@@ -15,6 +15,10 @@
         object-fit: cover;
         overflow: hidden;
     }
+
+    @media only screen and (max-width: 320px){
+        height: 430px;
+    }
 }
 .navbar {
     z-index: 9999;
@@ -34,6 +38,10 @@
     align-items: center;
 
     background-color: white;
+
+    @media only screen and (max-width: 320px){
+        height: 60px;
+    }
 }
 .navigation-bar {
     display: -webkit-box;
@@ -56,6 +64,14 @@
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+
+        @media only screen and (max-width: 1024px) and (min-width:990px){
+            display: flex;
+        }
+
+        @media only screen and (max-width: 989px){
+            display: none;
+        }
     }  
     &__nav-list {
         color: #1b1b1b;
@@ -69,8 +85,14 @@
         border-right: none;
         color: #ef4035;
     }
+
+    
 }
 .arrow-buttons {
+
+    @media only screen and (max-width: 989px){
+        display: none;
+    }
 
     &__left {
         position: absolute;
@@ -103,9 +125,37 @@
 .hero-text {
     position: absolute;
 
+    &__main {
+
+        @media only screen and (max-width: 1024px) and (min-width:989px){
+            font-size: 80px;
+        }
+
+
+
+        @media only screen and (max-width: 480px){
+            font-size: 64px;
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-bottom: 20px;
+        }
+
+        @media only screen and (max-width: 320px){
+            font-size: 46px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
     &__paragraph {
         color: #ffffff;
         font-size: 20px;
+
+        @media only screen and (max-width: 320px){
+            padding-left: 40px;
+            padding-right: 40px;
+        }
     }
     &__paragraph:after,
     &__paragraph:before {
@@ -115,9 +165,24 @@
         width: 50px;
         margin: 0 15px;
         transform: translateY(-5px);
+
+        @media only screen and (max-width: 480px){
+            width: 15px;
+            margin: 0 10px;
+        }
+
+        @media only screen and (max-width: 320px){
+            display: none;
+        }
     }
 }
 .img-btn {
+
+    @media only screen and (max-width: 320px){
+        display: none;
+    }
+
+
     position: absolute;
     bottom: 30px;
 }
@@ -133,4 +198,14 @@
     border-radius: 50%;
     display: inline-block;
     transition: all 0.5s ease;
+}
+.dropdown-menu {
+    display: none;
+
+    @media only screen and (max-width: 989px) and (min-width: 320px){
+        display: inline;
+
+        font-size: 30px;
+        padding-right: 30px;
+    }
 }
