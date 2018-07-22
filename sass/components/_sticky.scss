@@ -7,7 +7,6 @@
     background-color: rgba(255, 255, 255, 0.98);
     box-shadow: 0 2px 2px #efefef;
     z-index: 9999;
-    height: 70px;
 }
 
 .sticky .navigation-bar {
@@ -24,6 +23,7 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0;
 
     &__list {
         list-style-type: none;
@@ -31,10 +31,6 @@
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-
-        @media only screen and (min-width: 990px) and (max-width: 1024px){
-        
-        }
     
         @media only screen and (max-width: 989px){
             display: none;
@@ -51,5 +47,12 @@
         border-left: none;
         border-right: none;
         color: #ef4035;
+    }
+}
+
+.sticky .navigation-bar li a {
+
+    @media only screen and (max-width: 989px) {
+        font-size: 25px;
     }
 }

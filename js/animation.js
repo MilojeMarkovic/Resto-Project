@@ -116,3 +116,21 @@ function showDiv(n) {
     x[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
 }
+
+
+/* Menu dropdown navigation */
+
+$('.js--nav-icon').click(function() {
+    var nav = $('.js--main-nav');
+    var icon = $('.js--nav-icon i');
+    
+    nav.toggle();
+    
+    if (icon.hasClass('ion-android-menu')) {
+        icon.addClass('ion-close-round');
+        icon.removeClass('ion-android-menu');
+    } else {
+        icon.addClass('ion-android-menu');
+        icon.removeClass('ion-close-round');
+    }        
+});
