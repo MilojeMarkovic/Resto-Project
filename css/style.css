@@ -1072,6 +1072,12 @@ td {
 .active, .small-dots:hover {
   background-color: #ef4035 !important; }
 
+.qty {
+  border: none;
+  width: 20px;
+  font-size: 15px;
+  margin-right: 5px; }
+
 .about-section__heading {
   font-size: 30px;
   margin-bottom: 50px;
