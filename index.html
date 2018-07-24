@@ -14,9 +14,6 @@
 
         <link rel="shortcut icon" type="image/png" href="img/logo.png">
 
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
         <title>Resto</title>
     </head>
 
@@ -117,19 +114,58 @@
                         </div>
                     </div>
 
-                <!-- More menu -->
-                <div class="container">
-                    <div class="dropdown">
-                            <button onclick="myFunction()" class="dropbtn">Veiw all menu <i class="ion-android-arrow-dropdown more-arrow"></i></button>    
-                        <div id="myDropdown" class="dropdown-content">
-                            <a href="#">Italian Food</a>
-                            <a href="#">Greek Food</a>
-                            <a href="#">Hungarian Food</a>
+                    <!-- More menu -->
+                    <div class="container">
+                        <div class="dropdown">
+                                <button id="myBtn" class="dropbtn">Veiw all menu <i class="ion-android-arrow-dropdown more-arrow"></i></button>    
+                                <div id="myModal" class="modal">
+                                <!-- More menu content -->
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <h2 class="modal-head">Veiw All Menu</h2>
+                                    <table>
+                                        <tr>
+                                            <td><p class="left-side__paragraph">Saugue velit cursus.</p>
+                                                <p class="left-side__paragraph-sub">Pineapple, Mineced Beef, Cheese.</p></td>
+                                            <td class="menu-price-modal">$30</td>
+                                        </tr>
+                                        <tr>
+                                            <td><p class="left-side__paragraph">Nam eget dui Etiam.</p>
+                                                <p class="left-side__paragraph-sub">Pineapple, Mineced Beef, Cheese.</p></td>
+                                            <td class="menu-price-modal">$36</td>
+                                        </tr>
+                                        <tr>
+                                            <td><p class="left-side__paragraph">Saugue velit cursus.</p>
+                                                <p class="left-side__paragraph-sub">Pineapple, Mineced Beef, Cheese.</p></td>
+                                            <td class="menu-price-modal">$50</td>
+                                        </tr>
+                                        <tr>
+                                            <td><p class="left-side__paragraph">Nam eget dui Etiam.</p>
+                                                <p class="left-side__paragraph-sub">Pineapple, Mineced Beef, Cheese.</p></td>
+                                            <td class="menu-price-modal">$25</td>
+                                        </tr>
+                                        <tr>
+                                            <td><p class="left-side__paragraph">Saugue velit cursus.</p>
+                                                <p class="left-side__paragraph-sub">Pineapple, Mineced Beef, Cheese.</p></td>
+                                            <td class="menu-price-modal">$45</td>
+                                        </tr>
+                                        <tr>
+                                            <td><p class="left-side__paragraph">Cras dapibussemper nisi.</p>
+                                                <p class="left-side__paragraph-sub">Pineapple, Mineced Beef, Cheese.</p></td>
+                                            <td class="menu-price-modal">$30</td>
+                                        </tr>
+                                        <tr>
+                                            <td><p class="left-side__paragraph">Saugue velit cursus.</p>
+                                                <p class="left-side__paragraph-sub">Pineapple, Mineced Beef, Cheese.</p></td>
+                                            <td class="menu-price-modal">$40</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- FEATURED DICHES -->
@@ -374,7 +410,7 @@
                     <li class="contact-list__item"><a href="https://goo.gl/maps/oGBBmiGSrQ82"><strong>02.94.23.69.56</strong></a></li>
                 </ul>
                 </div>
-
+                
                 <div class="col span-1-of-4-footer contact-form">
                 <ul class="contact-list">
                     <li class="contact-list__item"><a href="#">Blog</a></li>
@@ -395,12 +431,15 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="jquery.waypoints.min.js"></script>
+
     <script src="js/more-menu.js"></script>
     <script src="js/animation.js"></script>
     <script src="js/like-counter.js"></script>
     <script src="js/lightbox.js"></script>
-
-    <script src="jquery.waypoints.min.js"></script>
-
+    <script src="js/modal-box.js"></script>
     </body>
 </html>

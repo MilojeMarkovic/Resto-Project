@@ -18,27 +18,6 @@
     position: relative;
     display: inline-block;
 }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 155px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-.dropdown a:hover {background-color: #ddd;}
-.show {display: block;}
-
-.dropdown-btn::after {
-    border-right: 1px solid #ffffff;
-}
 .more-arrow {
     color: #ffffff;  
     position: absolute;
@@ -50,4 +29,102 @@
     padding-right: 5px;
     padding-left: 8px;
     height: 15px;
+}
+
+
+/* Modal Box */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.6); 
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 45%;
+    position: relative;
+
+    @media only screen and (max-width: 1024px) and (min-width: 989px) {
+        width: 60%;
+    }
+
+    @media only screen and (max-width: 480px) {
+        width: 90%;
+    }
+}
+.close {
+    color: #aaaaaa;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+}
+.close:hover,
+.close:focus {
+    color: #ef4035;
+    text-decoration: none;
+    cursor: pointer;
+}
+table {
+    padding: 20px;
+    width: 557px;
+
+    @media only screen and (max-width: 480px) {
+        padding: 0;
+        width: 0;
+    }
+}
+td {
+    text-align: left;
+}
+.modal-head {
+    font-family: "Arial",sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1b1b1b;
+}
+.modal-head::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #ef4035;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.space-for-modal {
+    padding-bottom: 20px;
+}
+.menu-price-modal {
+    color: #1b1b1b;
+    float: right;
+    font-size: 22px;
+}
+.menu-price-modal::before {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid #d3d3d3;
+    width: 190px;
+    margin: 0px 40px 0px 10px;
+
+    @media only screen and (max-width: 480px) {
+        width: 80px;
+        margin: 0px 20px 0 10px;
+    }
+
+    @media only screen and (max-width: 320px) {
+        width: 0;
+        margin: 0;
+    }
 }
